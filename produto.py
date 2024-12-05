@@ -24,6 +24,9 @@ class Produto:
         else:
             print(0)
 
+    def exibir_info(self):
+        print(f"[{self.nome}] [{self.preco}] [{self.quantidade}]")
+
 
 produto1 = Produto("Vaso", 19.99, 100)
 produto1.adicionar_stock(-20)
