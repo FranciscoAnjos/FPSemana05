@@ -12,6 +12,18 @@ class Produto:
         else:
             print(0)
 
+    def vender(self, quantidade):
+        possible = False
+
+        if quantidade <= self.quantidade:
+            possible = True
+
+        if possible:
+            self.quantidade -= quantidade
+            print(1)
+        else:
+            print(0)
+
 
 produto1 = Produto("Vaso", 19.99, 100)
 produto1.adicionar_stock(-20)
